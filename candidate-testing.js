@@ -34,7 +34,7 @@ function gradeQuiz(candidateAnswers) {
 
 let correct = 0 ;
 
-console.log(`\nCandidate Name: ${candidateName}`);
+console.log(`Candidate Name: ${candidateName}`);
 
 for (let i = 0 ; i < questions.length ; i++) {
 if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
@@ -49,11 +49,11 @@ Correct Answer: ${correctAnswers[i]}`);}
 
     let grade = (correct / questions.length) * 100 ;
 
-console.log(`\n>>> Overall Grade: ${grade}% (${correct} of ${questions.length} responses correct) <<<`);
+console.log(`>>> Overall Grade: ${grade}% (${correct} of ${questions.length} responses correct) <<<`);
 
 if (grade >= 80){ 
-(console.log ("\n>>> Status: PASSED <<<"))
-} else { (console.log("\n>>> Status: FAILED <<<"));
+(console.log (">>> Status: PASSED <<<"))
+} else { (console.log(">>> Status: FAILED <<<"));
 }
     return grade;
 
