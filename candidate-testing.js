@@ -14,7 +14,7 @@ let questions = ["Who was the first American woman in space? \t",
 "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?]\t", "What is the minimum crew size for the ISS?\t"];
 let correctAnswers = ["Sally Ride", "True", "40", "Trajectory", "3"];
 let candidateAnswers = [];
- 
+
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -34,7 +34,7 @@ function gradeQuiz(candidateAnswers) {
 
 let correct = 0 ;
 
-console.log(`Candidate Name: ${candidateName}`);
+console.log(`\nCandidate Name: ${candidateName}`);
 
 for (let i = 0 ; i < questions.length ; i++) {
 if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
@@ -49,11 +49,11 @@ Correct Answer: ${correctAnswers[i]}`);}
 
     let grade = (correct / questions.length) * 100 ;
 
-console.log(`>>> Overall Grade: ${grade}% (${correct} of ${questions.length} responses correct) <<<`);
+console.log(`\n>>> Overall Grade: ${grade}% (${correct} of ${questions.length} responses correct) <<<`);
 
 if (grade >= 80){ 
-(console.log (">>> Status: PASSED <<<"))
-} else { (console.log(">>> Status: FAILED <<<"));
+(console.log ("\n>>> Status: PASSED <<<"))
+} else { (console.log("\n>>> Status: FAILED <<<"));
 }
     return grade;
 
